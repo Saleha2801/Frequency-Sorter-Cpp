@@ -15,6 +15,7 @@ void frequency_sort(int n, int arr[]) {
             unique[unique_count] = arr[i];
             freq[unique_count] = 1;
             unique_count++;
+            
         }
     }
     for (int i = 0; i < unique_count - 1; i++) {
@@ -23,7 +24,6 @@ void frequency_sort(int n, int arr[]) {
                 int temp = freq[i]; 
                 freq[i] = freq[j]; 
                 freq[j] = temp;
-
                 temp = unique[i]; 
                 unique[i] = unique[j]; 
                 unique[j] = temp;
